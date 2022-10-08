@@ -5,133 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício - Paula Herbella - 906 OiDevs</title>
-    <style>
-        body {
-            background-color: lightgrey;
-            font-family: Roboto-Medium, Arial, Helvetica, sans-serif;
-        }
-
-        .container {
-            max-width: 1000px;
-            background-color: #FFDACC;
-            margin: 0 auto;
-        }
-
-        header {
-            height: 100%;
-            position: sticky;
-            top: 10px;
-        }
-
-        header select,
-        input {
-            background-color: #FFEEE6;
-            border: 1px;
-            border-style: solid;
-            border-color: #FCB1A7;
-        }
-
-        button {
-            background-color: white;
-            border: none;
-        }
-
-        button:hover {
-            background-color: #FCB1A7;
-        }
-
-        nav {
-            text-align: center;
-
-        }
-
-        nav a {
-            display: inline-block;
-            text-decoration: none;
-            color: #976059;
-            line-height: 50px;
-            padding: 0 30px;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            background-color: #83AF93;
-            color: #AECFBA;
-        }
-
-        h2 {
-            background-color: #83AF93;
-            color: white;
-            padding: 5px 20px 5px;
-            font-size: medium;
-        }
-
-        section {
-            height: fit-content;
-        }
-
-        div {
-            height: auto;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        footer {
-            height: auto;
-            padding: 5px 0px 5px;
-            background-color: #FCB1A7;
-            font-size: small;
-            text-align: center;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-    <main class="container">
+    <div class="container">
         <header>
-            <nav>
-                <select name="módulos">
-                    <option value="1">Front-End Estático</option>
-                    <option value="2">Lógica de Programação</option>
-                    <option value="3">Programação Orientada a Objetos</option>
-                    <option value="4">Front-End Dinâmico</option>
-                    <option value="5">Framework Front-End</option>
-                </select>
-                <select name="aulas">
-                    <option value="1">Aula 01</option>
-                    <option value="2">Aula 02</option>
-                    <option value="3">Aula 03</option>
-                    <option value="4">Aula 04</option>
-                </select>
-                <input type="date">
-                <button type="submit">Ok</button>
-            </nav>
+            <select name="módulos">
+                <option value="1">Front-End Estático</option>
+                <option value="2">Lógica de Programação</option>
+                <option value="3">Programação Orientada a Objetos</option>
+                <option value="4">Front-End Dinâmico</option>
+                <option value="5">Framework Front-End</option>
+            </select>
+            <select name="aulas">
+                <option value="1">Aula 01</option>
+                <option value="2">Aula 02</option>
+                <option value="3">Aula 03</option>
+                <option value="4">Aula 04</option>
+            </select>
+            <input type="date">
+            <button type="submit">Ok</button>
         </header>
-        <section>
-            <h1 style="text-align: center; font-size: 40px;">Relatório de aula</h1>
-            <div>
+        <h1 style="text-align: center; font-size: 40px;">Relatório de aula</h1>
+            <div class="conteudo">
+        <main>
                 <h2>Front-End Estático | Aula 01 | 23/09/2022</h2>
                 <p>Esse dia deu início a apresentação de tags. O professor explicou sobre semântica com exemplos
                     usando o Visual Studio. <br> Deu início ao uso de CSS dentro do arquivo html. <br> Pediu o primeiro
                     exercício para ser entregue preferencialmente no GitHub. Tentou explicar como subia na plataforma,
-                    mas não deu tempo, mas aceitou que fosse por outros meios. <br><br> <b>Status: Trabalho entregue.</b>
+                    mas não deu tempo, mas aceitou que fosse por outros meios. <br><br> <b>Status: Trabalho
+                        entregue.</b>
                 </p>
+                <a href="./link/aula1-EXERCICIOS.html" target="_blank"><img src="./imgs/imagem4_exercicio.png"></a>
+        </main>
+        <aside>
+                Registros da aula:
+                <hr>
+                <a href="./imgs/Imagem1.png" target="_blank"><img src="./imgs/Imagem1.png"></a>
+                <a href="./imgs/Imagem2.png" target="_blank"><img src="./imgs/Imagem2.png"></a>
+        </aside>
             </div>
-            <hr>
-            <div>
-                <h2>Registros da aula:</h2>
-                <img src="./imgs/Imagem1.png">
-                <img src="./imgs/Imagem2.png">
-            </div>
-
-        </section>
         <footer> Site criado com o objetivo de exercitar os aprendizados em aula. </footer>
-    </main>
-
+    </div>
 </body>
 
 </html>
