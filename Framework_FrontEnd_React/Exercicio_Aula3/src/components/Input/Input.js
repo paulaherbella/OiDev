@@ -1,9 +1,11 @@
 function Input (props) {
     return (
-        <div>
-           <label for= "input">{props.name}</label>
+        <>
+           <label for= "input">usuário</label>
            <input name="input" /> 
-        </div>
+           <label for= "input" >senha</label>
+           <input name="input" type="password" /> 
+        </>
     )
 }
 
