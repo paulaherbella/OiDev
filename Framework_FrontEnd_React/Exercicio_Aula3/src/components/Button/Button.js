@@ -1,7 +1,7 @@
-function Button (props) {
+function Button ({title, redirecionar}) {
     return (
-        <div >           
-           <a className="entrar-login" href="https://discord.gg/c8Drf4h7" target="_blank">  entrar </a>
+        <div>           
+          <button className="entrar-login" onClick={redirecionar}>{title}</button>
         </div>
     )
 }

@@ -24,36 +24,22 @@ label {
   margin: 25px 0 5px;
 }
 
-button {
-  display: flex;
+a {
   align-items: center;
-  justify-content: center;
   border: none;
+  display: flex;
   height: 50px;
+  justify-content: center;
   margin-top: 25px;
-  color: white;
-}
-
-button:hover {
-  opacity: .8;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .entrar-login {
-  background-color: #353b50;
-  width: 100%;  
+  background-color: rgb(161, 56, 84);
 }
 
-.home {
-  padding: 50px;
-  color: white;
-}
 
-.home button {
-  background-color: initial;
-  font-size: medium;
-  justify-content: left;
-  color: #8e99c6;
-}
 
 body {
   background-color:#464D6A;
