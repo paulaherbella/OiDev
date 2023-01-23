@@ -1,4 +1,4 @@
-function Link (props) {
+const Link = () => {
     return (
         <div>           
            <a href="https://google.com" target="_blank"> esqueceu a senha? </a>

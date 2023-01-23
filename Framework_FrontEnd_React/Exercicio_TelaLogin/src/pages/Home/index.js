@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button/Button";
 
-function Home() {
+const Home = () => {
     const navigate = useNavigate ();
 
-    function volteParaLogin() {
+   const volteParaLogin = () => {
         navigate("/");
     }
 

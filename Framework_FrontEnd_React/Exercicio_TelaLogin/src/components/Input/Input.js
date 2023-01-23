@@ -1,4 +1,4 @@
-function Input (props) {
+const Input = () => {
     return (
         <>
            <label for= "input">usuário</label>

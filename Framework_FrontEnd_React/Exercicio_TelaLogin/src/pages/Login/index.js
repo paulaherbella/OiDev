@@ -5,10 +5,10 @@ import Button from '../../components/Button/Button';
 import Link from '../../components/Link/Link';
 import { useNavigate } from "react-router-dom";
 
-function Login() {
+const Login = () => {
   const navigate = useNavigate ();
 
-  function vaPraHome() {
+  const vaPraHome = () => {
     navigate("/home");
   }
 
