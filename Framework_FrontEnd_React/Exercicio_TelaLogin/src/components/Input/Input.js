@@ -1,12 +1,19 @@
-const Input = () => {
+import PropTypes from "prop-types";
+
+const Input = ({text, textPassword, onChange}) => {
     return (
         <>
-           <label for= "input">usuário</label>
-           <input name="input" /> 
-           <label for= "input" >senha</label>
+           <label htmlFor= "input">{text}</label>
+           <input name="input" onChange={onChange} /> 
+
+           <label htmlFor= "input" >{textPassword}</label>
            <input name="input" type="password" /> 
         </>
     )
 }
+
+Input.propTypes = {
+    label: PropTypes.string,
+};
 
 export default Input

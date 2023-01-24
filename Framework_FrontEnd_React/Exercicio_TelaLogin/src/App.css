@@ -31,7 +31,7 @@ button {
   border: none;
   height: 50px;
   margin-top: 25px;
-  color: white;
+  /* color: white; */
 }
 
 button:hover {
@@ -39,7 +39,7 @@ button:hover {
 }
 
 .entrar-login {
-  background-color: #353b50;
+  /* background-color: #353b50; */
   width: 100%;  
 }
 
@@ -52,7 +52,6 @@ button:hover {
   background-color: initial;
   font-size: medium;
   justify-content: left;
-  color: #8e99c6;
 }
 
 body {

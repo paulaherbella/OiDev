@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className="home">
             <h1>bem-vinde a home</h1>
-            <Button redirecionar={volteParaLogin} title="sair" />
+            <Button aoClicar={volteParaLogin} title="voltar para o login" color="#8e99c6" />
         </div>
     )
 }
