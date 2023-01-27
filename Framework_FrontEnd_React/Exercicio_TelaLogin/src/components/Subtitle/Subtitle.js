@@ -1,8 +1,8 @@
-const Subtitle = ({usuario}) => {
+const Subtitle = ({text, color}) => {
 
     return (
         <div>
-            <h4>Olá, {usuario}!</h4>
+            <h4 style={{color: color}}>{text}</h4>
         </div>
     )
 
