@@ -12,11 +12,11 @@ const Login = () => {
   const navigate = useNavigate ();
   const [title, setTitle] = useState("Login");
   const [showError, setShowError] = useState(false);
-  const [inputColor, setinputColor] = useState('white')
+  const [errorColor, setErrorColor] = useState('')
   const [nomeDeUsuario, setNomeDeUsuario] = useState("");
   const [senha, setSenha] = useState("");
 
-  const [users, setUsers] = useState([
+  const [users] = useState([
     {
       email: "paula@gmail.com",
       password: "123",
@@ -35,7 +35,7 @@ const Login = () => {
       navigate("/home");
     } else {
       setShowError(true);
-      setinputColor(inputColor);
+      setErrorColor("#ff4664");
     }
    
   }
@@ -49,10 +49,13 @@ const Login = () => {
     <div className="container">
       <div className="login">
         <Title text={title}/>
-        {showError && <Subtitle text="Credenciais inválidas" color="#ff4664"/>}
-        {/* <Subtitle usuario={nomeDeUsuario} /> */}
-        <Input type="text" value={nomeDeUsuario} onChange={(e) => setNomeDeUsuario(e.target.value)} text="usuário"  />
-        <Input type="text" onChange={(e) => setSenha(e.target.value)} text="senha" hideContent />
+        {showError ? (<Subtitle text="Credenciais inválidas" color={errorColor}/> 
+        ) : (
+          <span>Digite seu e-mail e senha abaixo</span>
+        )}
+
+        <Input color={errorColor} type="text" value={nomeDeUsuario} onChange={(e) => setNomeDeUsuario(e.target.value)} text="usuário"  />
+        <Input color={errorColor} type="text" onChange={(e) => setSenha(e.target.value)} text="senha" hideContent />
         <Button aoClicar={vaPraHome} title="entrar" bgColor="rgb(161, 56, 84)" color="white" />
         <Button aoClicar={mudarTitulo} title="trocar o título" />
         <Link />
