@@ -16,23 +16,33 @@ const Login = () => {
   const [nomeDeUsuario, setNomeDeUsuario] = useState("");
   const [senha, setSenha] = useState("");
 
-  const [users] = useState([
+  const [usuarios] = useState([
     {
+      id: 1,
       email: "paula@gmail.com",
       password: "123",
     },
     {
-      email: "judory@gmail.com",
+      id: 2,
+      email: "ju@gmail.com",
+      password: "321",
+    },
+    {
+      id: 3,
+      email: "dory@gmail.com",
       password: "321",
     }
   ])
+ 
   
-
   const vaPraHome = () => {
-    const usuarioEncontrado = users.find(usuario => usuario.email === nomeDeUsuario && usuario.password === senha)
+    const usuarioEncontrado = usuarios.find(usuario => usuario.email === nomeDeUsuario && usuario.password === senha)
     
     if (usuarioEncontrado){
-      navigate("/home");
+      navigate(
+        "/home", 
+        { state: { listaDeUsuarios: usuarios} }
+      );
     } else {
       setShowError(true);
       setErrorColor("#ff4664");
@@ -59,7 +69,10 @@ const Login = () => {
         <Button aoClicar={vaPraHome} title="entrar" bgColor="rgb(161, 56, 84)" color="white" />
         <Button aoClicar={mudarTitulo} title="trocar o título" />
         <Link />
+        
+        
       </div>
+      
     </div>
   );
 }
